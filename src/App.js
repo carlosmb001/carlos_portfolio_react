@@ -1,5 +1,9 @@
 import React from "react";
 import Projects from "./components/Projects";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Bio from "./components/Bio";
+import Contact from "./components/Contact";
 
 
 const projects = [
@@ -47,7 +51,13 @@ const projects = [
 ];
 
 function App() {
-  return <Projects projects={projects} />;
+  return <div>
+  <Header />
+  <Bio />
+  <Projects projects={projects} />
+  <Contact />
+  <Footer />
+  </div>
 }
 
 export default App;

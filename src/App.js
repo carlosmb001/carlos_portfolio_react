@@ -38,14 +38,6 @@ const projects = [
     technologies: ["Node.js", "Express.js", "indexedDB", "Webpack" , "Workbox"],
     gitLink: "https://github.com/carlosmb001/text_editor_PWA",
     liveLink: "https://text-editor-pwa-cmb-953d51a916c2.herokuapp.com/",
-  },
-  {
-    id: 5,
-    name: "",
-    description: "",
-    technologies: ["", "", "", "" , ""],
-    gitLink: "",
-    liveLink: "",
   }
   
 ];

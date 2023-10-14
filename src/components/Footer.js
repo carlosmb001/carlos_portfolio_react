@@ -1,12 +1,20 @@
 import React from "react";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ArticleIcon from '@mui/icons-material/Article';
 
 function Footer() {
   const footerStyle = {
-    backgroundColor: "#f5f5f5",
-    padding: "20px",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    backgroundColor: "#333",
+    color: "#fff",
+    textAlign: "center",
+    padding: "10px",
+    position: "fixed",
+    left: "0",
+    bottom: "0",
+    width: "100%",
   };
 
   const navStyle = {
@@ -18,13 +26,21 @@ function Footer() {
   const linkStyle = {
     display: "inline-block",
     marginRight: "10px",
-    width: "45px",
-    height: "45px",
+    width: "40px",
+    height: "40px",
   };
 
   const iconStyle = {
     width: "100%",
     height: "100%",
+    color: "#fff",
+  };
+  const divStyle = {
+    bottom: "10px",
+    width: "100%",
+    color: "#fff",
+    fontSize: "10px",
+    opacity: "0.5",
   };
 
   return (
@@ -33,51 +49,34 @@ function Footer() {
         <ul>
           <li style={linkStyle}>
             <a href="https://www.linkedin.com/in/carlos-martinez-baltazar/">
-              <img
-                src="./assests/images/icons/linkdin_icon.png"
-                alt="linkdin icon"
-                style={iconStyle}
-              />
+              <LinkedInIcon style={iconStyle}/>
             </a>
           </li>
           <li style={linkStyle}>
             <a href="https://github.com/carlosmb001">
-              <img
-                src="./assests/images/icons/github_icon.png"
-                alt="github icon"
-                style={iconStyle}
-              />
+              <GitHubIcon style={iconStyle}/>
             </a>
           </li>
           <li style={linkStyle}>
             <a href="intagram.com">
-              <img
-                src="./assests/images/icons/insta_icon.png"
-                alt="instagram icon"
-                style={iconStyle}
-              />
+            <InstagramIcon style={iconStyle}/>
             </a>
           </li>
           <li style={linkStyle}>
             <a href="twitter.com">
-              <img
-                src="./assests/images/icons/twitter_icon.png"
-                alt="twitter icon"
-                style={iconStyle}
-              />
+              <TwitterIcon style={iconStyle}/>
             </a>
           </li>
           <li style={linkStyle}>
             <a href="./assests/images/Final Resume Carlos Baltazar.pdf">
-              <img
-                src="./assests/images/icons/resume_icon.png"
-                alt="resume icon"
-                style={iconStyle}
-              />
+              <ArticleIcon style={iconStyle}/>
             </a>
           </li>
         </ul>
       </nav>
+      <div style={divStyle}>
+        ©Copyright 2023 Carlos Martinez Baltazar
+      </div> 
     </footer>
   );
 }

@@ -1,63 +1,76 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import Link from '@material-ui/core/Link';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import CardMedia from '@material-ui/core/CardMedia';
 
-function Projects(props) {
-  const projectStyle = {
+
+const useStyles = makeStyles((theme) => ({
+  root: {
     backgroundColor: '#f5f5f5',
     border: '1px solid #ddd',
     borderRadius: '5px',
     padding: '20px',
     marginBottom: '20px',
-  };
-
-  const titleStyle = {
+  },
+  title: {
     fontSize: '24px',
     marginBottom: '10px',
-  };
-
-  const descriptionStyle = {
+  },
+  description: {
     fontSize: '16px',
     marginBottom: '10px',
-  };
-
-  const techListStyle = {
-    listStyle: 'none',
-    margin: '0',
-    padding: '0',
-  };
-
-  const techItemStyle = {
-    fontSize: '14px',
-    marginBottom: '5px',
-  };
-
-  const linkStyle = {
+  },
+  link: {
     display: 'inline-block',
+    backgroundColor: '#ddd',
+    borderRadius: '5px',
+    padding: '5px 10px',
     marginRight: '10px',
+    marginBottom: '10px',
     fontSize: '14px',
-    color: '#007bff',
-  };
+    textDecoration: 'none',
+    color: 'inherit',
+  },
+}));
+
+function Projects(props) {
+  const classes = useStyles();
 
   const ProjectsList = props.projects.map((project) => (
-    <div key={project.id} style={projectStyle}>
-      <h2 style={titleStyle}>{project.name}</h2>
-      <p style={descriptionStyle}>{project.description}</p>
-      <ul style={techListStyle}>
+    <Paper key={project.id} className={classes.root}>
+      <CardMedia
+        className={classes.media}
+        image={project.image}
+        title={project.name}
+      />
+      <Typography variant="h2" className={classes.title}>
+        {project.name}
+      </Typography>
+      <Typography variant="body1" className={classes.description}>
+        {project.description}
+      </Typography>
+      <List>
         {project.technologies.map((tech, index) => (
-          <li key={index} style={techItemStyle}>
-            {tech}
-          </li>
+          <ListItem key={index}>
+            <ListItemText primary={tech} />
+          </ListItem>
         ))}
-      </ul>
-      <a href={project.gitLink} style={linkStyle}>
+      </List>
+      <Link href={project.gitLink} className={classes.link}>
         GitHub
-      </a>
-      <a href={project.liveLink} style={linkStyle}>
+      </Link>
+      <Link href={project.liveLink} className={classes.link}>
         Live Demo
-      </a>
-    </div>
+      </Link>
+    </Paper>
   ));
 
-  return <div className="list-group">{ProjectsList}</div>;
+  return <div>{ProjectsList}</div>;
 }
 
 export default Projects;

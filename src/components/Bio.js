@@ -1,4 +1,5 @@
 import React from 'react';
+import image from '../images/projects/carlos.jpg';
 
 function Bio() {
   const sectionStyle = {
@@ -25,6 +26,7 @@ function Bio() {
 
   return (
     <section id="about-me" className="about-me" style={sectionStyle}>
+      {/* <img src={image} alt="Carlos Martinez Baltazar" /> */}
       <div className="container" style={containerStyle}>
         <h2 style={titleStyle}>About Me</h2>
         <p style={textStyle}>

@@ -10,6 +10,7 @@ const projects = [
   {
     id: 1,
     name: "Fit Squad",
+    photo:'../assets/images/fitsquad.png',
     description: "Fit Squad is a health & fitness companion app aimed to keep you motivated and on schedule while navigating your busy life.",
     technologies: ["Node.js", "Express.js", "MySQL", "Sequelize" , "Dotenv"],
     gitLink: "https://github.com/carlosmb001/fit_squad",
@@ -18,6 +19,7 @@ const projects = [
   {
     id: 2,
     name: "Recipe Conierge",
+    photo:'../assets/images/recipe.png',
     description: "We have created a website that will help search for recipes and save them to a separate favorites page. Once on the favorites page, it is possible to select ingredients from the recipes and search for local stores that supply them close to your location.",
     technologies: ["Node.js", "Express.js", "MySQL", "Sequelize" , "Dotenv"],
     gitLink: "https://github.com/athenamw/recipeConcierge",
@@ -26,6 +28,7 @@ const projects = [
   {
     id: 3,
     name: "Social Network API",
+    photo:'../assets/images/social.gif',
     description: "A REST API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.",
     technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose" , "Dotenv"],
     gitLink: "",
@@ -34,6 +37,7 @@ const projects = [
   {
     id: 4,
     name: "JATE, Text Editor",
+    photo:'../assets/images/jate.gif',
     description: "Step into the future of web apps with this robust Text Editor crafted to meet the standards of Progressive Web Applications (PWA). With an emphasis on offline reliability and efficient data storage, this editor ensures that your notes and code snippets are securely saved and easily accessible. This application makes use of cutting-edge technologies such as the idb package for data management and features a streamlined deployment process for Heroku.",
     technologies: ["Node.js", "Express.js", "indexedDB", "Webpack" , "Workbox"],
     gitLink: "https://github.com/carlosmb001/text_editor_PWA",

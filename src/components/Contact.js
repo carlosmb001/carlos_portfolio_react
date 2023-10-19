@@ -34,7 +34,7 @@ function Contact() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} id='contact-me'>
       <Container maxWidth="sm">
         <Paper className={classes.paper}>
           <Typography variant="h4" align="center" gutterBottom>

@@ -93,6 +93,7 @@ function Projects(props) {
             fontWeight: 'bold',
             marginBottom: '20px',
             textAlign: 'center',
+            marginTop: '5%',
             }}>
             Projects</h2>
       <Grid container spacing={3}>

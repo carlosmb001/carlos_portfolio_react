@@ -88,6 +88,13 @@ function Projects(props) {
 
   return (
     <div>
+          <h2 id='projects' style={{ 
+            fontSize: '36px',
+            fontWeight: 'bold',
+            marginBottom: '20px',
+            textAlign: 'center',
+            }}>
+            Projects</h2>
       <Grid container spacing={3}>
         {ProjectsList}
       </Grid>

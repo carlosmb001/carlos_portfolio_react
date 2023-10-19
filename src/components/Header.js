@@ -53,8 +53,8 @@ function Header(props) {
               </a>
             </li>
             <li>
-              <a href="#work" style={linkStyle}>
-                Work
+              <a href="#projects" style={linkStyle}>
+                Projects
               </a>
             </li>
             <li>

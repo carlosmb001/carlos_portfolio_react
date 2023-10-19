@@ -7,7 +7,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 
 function Footer() {
   const footerStyle = {
-    backgroundColor: "#333",
+    backgroundColor: "#33673B",
     color: "#fff",
     textAlign: "center",
     padding: "10px",

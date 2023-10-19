@@ -75,11 +75,11 @@ function Projects(props) {
             {project.description}
           </Typography>
           <List>
-            {project.technologies.map((tech, index) => (
+            {/* {project.technologies.map((tech, index) => (
               <ListItem key={index}>
                 <ListItemText primary={tech} />
               </ListItem>
-            ))}
+            ))} */}
           </List>
         </div>
       </div>

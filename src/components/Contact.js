@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignItems: 'center',
     height: '80vh',
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#f8f9fa6', // Change the background color here
   },
   paper: {
     backgroundColor: '#fff',
@@ -19,34 +19,14 @@ const useStyles = makeStyles((theme) => ({
   form: {
     display: 'flex',
     flexDirection: 'column',
+    alignItems: 'center',
   },
-  input: {
-    marginBottom: theme.spacing(2),
-    backgroundColor: '#f5f5f5',
-    borderRadius: '5px',
-    padding: theme.spacing(2),
-    border: 'none',
-    boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
-    '&:focus': {
-      outline: 'none',
-      boxShadow: '0 0 5px rgba(0, 0, 0, 0.5)',
-    },
-    '& .MuiInputBase-input': {
-      padding: '10px',
-    },
+  textField: {
+    margin: theme.spacing(1),
+    width: '100%',
   },
   button: {
-    marginTop: theme.spacing(2),
-    backgroundColor: '#2196f3',
-    color: '#fff',
-    borderRadius: '5px',
-    padding: theme.spacing(2),
-    border: 'none',
-    cursor: 'pointer',
-    boxShadow: '0 0 5px rgba(0, 0, 0, 0.2)',
-    '&:hover': {
-      backgroundColor: '#1976d2',
-    },
+    margin: theme.spacing(1),
   },
 }));
 
@@ -57,33 +37,33 @@ function Contact() {
     <div className={classes.root}>
       <Container maxWidth="sm">
         <Paper className={classes.paper}>
-          <Typography variant="h5" align="center" gutterBottom>
-            Contact me
+          <Typography variant="h4" align="center" gutterBottom>
+            Contact Me
           </Typography>
           <form className={classes.form}>
             <TextField
-              label="Company Name"
+              label="Name"
               variant="outlined"
-              className={classes.input}
+              className={classes.textField}
             />
             <TextField
               label="Email"
               variant="outlined"
-              className={classes.input}
+              className={classes.textField}
             />
             <TextField
-              label="What can we work on"
+              label="Message"
               variant="outlined"
               multiline
               minRows={4}
-              className={classes.input}
+              className={classes.textField}
             />
             <Button
-              type="submit"
               variant="contained"
+              color="primary"
               className={classes.button}
             >
-              Submit
+              Send
             </Button>
           </form>
         </Paper>

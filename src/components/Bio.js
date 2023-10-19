@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../images/projects/carlos.jpg';
+import image from '../images/projects/carlos.jpeg';
 
 function Bio() {
   const sectionStyle = {
@@ -12,13 +12,17 @@ function Bio() {
     margin: '0 auto',
     textAlign: 'center',
   };
-
+  const imageStyle = {
+    width: '300px',
+    height: '300px',
+    borderRadius: '50%',
+    marginBottom: '20px',
+  };
   const titleStyle = {
     fontSize: '36px',
     fontWeight: 'bold',
     marginBottom: '20px',
   };
-
   const textStyle = {
     fontSize: '18px',
     lineHeight: '1.5',
@@ -26,9 +30,9 @@ function Bio() {
 
   return (
     <section id="about-me" className="about-me" style={sectionStyle}>
-      {/* <img src={image} alt="Carlos Martinez Baltazar" /> */}
       <div className="container" style={containerStyle}>
         <h2 style={titleStyle}>About Me</h2>
+        <img src={image} style={imageStyle} alt="Carlos Martinez Baltazar" />
         <p style={textStyle}>
           Welcome to my Full Stack Development portfolio page! My name is Carlos
           Martinez Baltazar, and I am originally from Mexico but currently

@@ -75,7 +75,7 @@ function Contact() {
               label="What can we work on"
               variant="outlined"
               multiline
-              rows={4}
+              minRows={4}
               className={classes.input}
             />
             <Button

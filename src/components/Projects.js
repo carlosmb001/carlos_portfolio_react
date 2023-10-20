@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     border: '1px solid #ddd',
     borderRadius: '5px',
     padding: '20px',
-    marginBottom: '20px',
+    marginBottom: '10px',
     display: 'flex',
     alignItems: 'center',   
   },
@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontSize: '24px',
-    marginTop: '10px',
+    marginTop: '0px',
     marginBottom: '0px',
     margin : '0 auto',
     textAlign: 'center', 

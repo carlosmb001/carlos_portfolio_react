@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '60vh',
+    height: '50vh',
     backgroundColor: '#f8f9fa6', // Change the background color here
   },
   paper: {

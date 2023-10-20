@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Typography from '@material-ui/core/Typography';
+import { TextField, Button, Container, Paper, Typography } from '@material-ui/core';
 import Link from '@material-ui/core/Link';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -29,10 +28,11 @@ const useStyles = makeStyles((theme) => ({
   title: {
     fontSize: '24px',
     marginTop: '10px',
-    marginBottom: '10px',
+    marginBottom: '0px',
     margin : '0 auto',
   },
   description: {
+    margin : '10px 5px 10px 5px',
     fontSize: '16px',
     marginBottom: '10px',
   },
@@ -41,11 +41,12 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#ddd',
     borderRadius: '5px',
     padding: '5px 10px',
-    marginRight: '10px',
-    marginBottom: '10px',
-    fontSize: '14px',
-    textDecoration: 'none',
+    margin : '0px 5px 10px 0px',
+    fontSize: '10px',
     color: 'inherit',
+    '&:hover': {
+      backgroundColor: '#55ad63',
+    },
   },
 }));
 
@@ -60,17 +61,17 @@ function Projects(props) {
           <Typography variant="h6" className={classes.title}>
             {project.name}
           </Typography>
+          <Button href={project.gitLink} className={classes.link}>
+            GitHub
+          </Button>
+          <Button href={project.liveLink} className={classes.link}>
+            Live Demo
+          </Button>
           <CardMedia
           className={classes.media}
           image={project.image}
           alt={project.name}
         />
-          <Link href={project.gitLink} className={classes.link}>
-            GitHub
-          </Link>
-          <Link href={project.liveLink} className={classes.link}>
-            Live Demo
-          </Link>
           <Typography variant="body1" className={classes.description}>
             {project.description}
           </Typography>

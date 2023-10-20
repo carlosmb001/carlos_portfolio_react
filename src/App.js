@@ -6,7 +6,7 @@ import Bio from "./components/Bio";
 import Contact from "./components/Contact";
 import image1 from './images/projects/fitsquad.png';
 import image2 from './images/projects/Recipe.png';
-import image3 from './images/projects/social.gif';
+import image3 from './images/projects/pay_it_forward.png';
 import image4 from './images/projects/jate.gif';
 
 
@@ -31,12 +31,12 @@ const projects = [
   },
   {
     id: 3,
-    name: "Social Network API",
+    name: "Pay It Forward",
     image:image3,
-    description: "A REST API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This application uses Express.js for routing, a MongoDB database, and the Mongoose ODM.",
+    description: "Pay it Forward is a social network designed to inspire, connect, and empower individuals to create a more compassionate and caring world. Facilitate volunteer engagement, encourage acts of kindness, and strengthen the bonds within communities.",
     technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose" , "Dotenv"],
-    gitLink: "",
-    liveLink: "https://www.youtube.com/watch?v=9HfLLEZ3hMI&t=13s",
+    gitLink: "https://github.com/chandraucb/payitforward.git",
+    liveLink: "https://payitforward-app-46493cd9589e.herokuapp.com/",
   },
   { 
     id: 4,

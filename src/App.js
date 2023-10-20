@@ -33,7 +33,7 @@ const projects = [
     id: 3,
     name: "Social Network API",
     image:image3,
-    description: "A REST API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This application uses Express.js for routing, a MongoDB database, and the Mongoose ODM. This application does not include a front end.",
+    description: "A REST API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. This application uses Express.js for routing, a MongoDB database, and the Mongoose ODM.",
     technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose" , "Dotenv"],
     gitLink: "",
     liveLink: "https://www.youtube.com/watch?v=9HfLLEZ3hMI&t=13s",

@@ -64,7 +64,7 @@ function Header(props) {
             </li>
             <li>
               <a
-                href="./assests/images/Final Resume Carlos Baltazar.pdf"
+                href="https://drive.google.com/file/d/1HJHc-2zYo4-cZbYR4jDsbYniDaA60wC4/view?usp=share_link"
                 style={linkStyle}
               >
                 Resume

@@ -57,17 +57,17 @@ function Footer() {
             </a>
           </li>
           <li style={linkStyle}>
-            <a href="intagram.com">
+            <a href="https://www.instagram.com/">
             <InstagramIcon style={iconStyle}/>
             </a>
           </li>
           <li style={linkStyle}>
-            <a href="twitter.com">
+            <a href="https://twitter.com/m">
               <TwitterIcon style={iconStyle}/>
             </a>
           </li>
           <li style={linkStyle}>
-            <a href="./assests/images/Final Resume Carlos Baltazar.pdf">
+            <a href="https://drive.google.com/file/d/1HJHc-2zYo4-cZbYR4jDsbYniDaA60wC4/view?usp=share_link">
               <ArticleIcon style={iconStyle}/>
             </a>
           </li>

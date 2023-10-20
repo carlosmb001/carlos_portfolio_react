@@ -26,7 +26,7 @@ npm start //To start the server locally
 [Material UI](https://mui.com/material-ui/)
 
 ## 👏 Credits
-https://react.dev/learn/start-a-new-react-project
+[React](https://react.dev/learn/start-a-new-react-project)
 
 
 ## 📝 License

@@ -1,8 +1,8 @@
 # Carlos React Portfolio
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](http://choosealicense.com/licenses/mit/)
 
-## 🔍 Description
-A portfolio app using ReactJS to show case new skills acquired and various project work.
+## 🌟 Description
+My React Portfolio is a personal website designed to showcase my skills, projects, and achievements as a developer. It serves as an online portfolio to demonstrate my expertise and provide information about my work and experience. the entire page was built using React
 
 ## 🌍 Deployment
 Application is deployed on Git Pages and can be accessed clicking the image below link

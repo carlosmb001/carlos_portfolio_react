@@ -41,6 +41,6 @@ Code contributions are welcome! <br> To contributre, make a fork and clone of th
 ## ❓ Questions 
   Name : Carlos Martinez Baltazar <br>
   Git profile : https://github.com/carlosmb001 <br>
-  Portfolio: https://carlosmb001.github.io/carlos_portfolio_react/
+  Portfolio: https://carlosmb001.github.io/carlos_portfolio_react/ <br>
   Contact email : martinez.carlos@gmail.com  <br>
   Reach me through email with additional questions

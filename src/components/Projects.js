@@ -1,12 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { TextField, Button, Container, Paper, Typography } from '@material-ui/core';
-import Link from '@material-ui/core/Link';
+import { Button, Typography } from '@material-ui/core';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,25 +28,35 @@ const useStyles = makeStyles((theme) => ({
     marginTop: '10px',
     marginBottom: '0px',
     margin : '0 auto',
+    textAlign: 'center', 
   },
   description: {
     margin : '10px 5px 10px 5px',
     fontSize: '16px',
     marginBottom: '10px',
   },
+  button: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin : '0px 5px 8px 5px',
+  },
   link: {
     display: 'inline-block',
     backgroundColor: '#ddd',
     borderRadius: '5px',
     padding: '5px 10px',
-    margin : '0px 5px 10px 0px',
-    fontSize: '10px',
+    margin : '0px 5px 0px 5px',
+    fontSize: '14px',
     color: 'inherit',
+    textTransform: 'capitalize',
+    textDecoration: 'none',
     '&:hover': {
       backgroundColor: '#55ad63',
     },
   },
 }));
+
 
 function Projects(props) {
   const classes = useStyles();
@@ -61,12 +69,14 @@ function Projects(props) {
           <Typography variant="h6" className={classes.title}>
             {project.name}
           </Typography>
+          <div className={classes.button}>
           <Button href={project.gitLink} className={classes.link}>
             GitHub
           </Button>
           <Button href={project.liveLink} className={classes.link}>
             Live Demo
           </Button>
+          </div>
           <CardMedia
           className={classes.media}
           image={project.image}
